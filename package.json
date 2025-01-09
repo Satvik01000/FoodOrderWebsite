@@ -1,0 +1,33 @@
+{
+  "name": "react_learning",
+  "version": "1.0.0",
+  "description": "Learn React",
+  "main": "src/scripts.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest",
+    "build": "parcel build index.html"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Satvik01000/ReactLearning.git"
+  },
+  "author": "Satvik Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satvik01000/ReactLearning/issues"
+  },
+  "homepage": "https://github.com/Satvik01000/ReactLearning#readme",
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "parcel": "^2.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

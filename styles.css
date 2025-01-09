@@ -1,0 +1,118 @@
+.App{
+    margin:10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo and nav items */
+    align-items: center;
+    width: 100%; /* Ensure the header takes full width */
+    border: 2px solid black;
+
+}
+.body{
+    margin: 20px;
+}
+
+.navItems ul {
+    display: flex; /* Align list items horizontally */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navItems li {
+    margin-left: 20px; /* Add space between list items */
+    font-size: 20px;
+    padding: 10px;
+}
+
+.logoContainer {
+    width: 140px; /* Adjust the width as needed */
+    height: 140px; /* Adjust the height as needed */
+    overflow: hidden; /* Ensure the image does not overflow the container */
+}
+
+.logoContainer img {
+    width: 100%; /* Make the image fit the container's width */
+    height: 100%; /* Make the image fit the container's height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+.search{
+    border: 2px solid black;
+    padding: 12px;
+    margin: 20px;
+}
+
+.Res-Card {
+    width: 250px; /* Adjust the width to suit your design */
+    height: 300px; /* Adjust the height to suit your design */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin: 12px;
+}
+
+.Res-Card:hover {
+    margin: 25px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: #c5c5c5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Res-Card .imgContainer {
+    width: 100%; /* Ensure image container takes full width */
+    height: 60%; /* Ensure image takes 60% of card's height */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    overflow: hidden;
+}
+
+.Res-Card .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers container without distortion */
+}
+
+.Res-Card h3, .Res-Card h4 {
+    margin: 5px 0; /* Add small margin between text elements */
+    text-align: center;
+}
+
+.Res-Card h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Res-Card h4 {
+    font-size: 14px;
+}
+
+.Restaurant-Container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filterBtn {
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #5fc9ff;
+    transition: background-color 0.5s, transform 0.5s;
+    height: 30px;
+}
+
+.filterBtn:hover {
+    cursor: pointer;
+    background-color: #dadada;
+    transform: scale(1.1);
+}
