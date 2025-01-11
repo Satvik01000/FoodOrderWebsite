@@ -1,0 +1,29 @@
+.shimmer-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 160px; /* Adjust this value based on the height of your header */
+}
+
+.shimmer {
+    width: 250px; /* Match the width of the restaurant card */
+    height: 300px; /* Match the height of the restaurant card */
+    padding: 15px;
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 15px; /* Match the border radius of the restaurant card */
+    margin: 12px; /* Match the margin of the restaurant card */
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}

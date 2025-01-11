@@ -3,21 +3,28 @@
 }
 
 .header {
+    width: 100%;
+    position: absolute; /* Make the header cover the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left of the page */
+    right: 0; /* Align it to the right of the page */
+    z-index: 1000; /* Ensure the header stays on top of other elements */
     display: flex;
     justify-content: space-between; /* Distribute space between logo and nav items */
     align-items: center;
-    width: 100%; /* Ensure the header takes full width */
-    border: 2px solid black;
-
+    background-color: #ff5555;
+    padding: 10px; /* Add some padding for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35); /* Add shadow to the header */
 }
-.body{
+.body {
     margin: 20px;
+    padding-top: 160px; /* Adjust this value based on the height of your header */
 }
 
 .navItems ul {
     display: flex; /* Align list items horizontally */
     list-style: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
+    margin: 30px; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
 
@@ -34,15 +41,36 @@
 }
 
 .logoContainer img {
-    width: 100%; /* Make the image fit the container's width */
-    height: 100%; /* Make the image fit the container's height */
+    width: 115%; /* Make the image fit the container's width */
+    height: 115%; /* Make the image fit the container's height */
     object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
-.search{
-    border: 2px solid black;
+.search-container{
+    /*border: 2px solid black;*/
     padding: 12px;
-    margin: 20px;
+
+}
+.search{
+    width: 92%;
+    height: 30px;
+    margin: 12px;
+    border-radius: 12px;
+    border: 1.5px solid grey;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.search-button{
+    width: 75px;
+    height: 30px;
+    border-radius: 12px;
+    border: 1.5px solid grey;
+    transition: background-color 0.3s, color 0.3s;
+}
+.search-button:hover{
+    background-color: #bdbdbd;
+    color: white;
 }
 
 .Res-Card {
@@ -115,4 +143,24 @@
     cursor: pointer;
     background-color: #dadada;
     transform: scale(1.1);
+}
+
+.filter-line {
+    border: none;
+    height: 2px; /* Adjust the height as needed */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgb(172, 172, 172) 50%, rgba(0, 0, 0, 0.2) 100%);
+    margin: 10px 0; /* Adjust the margin as needed */
+}
+
+.LogInLogOut{
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+.LogInLogOut:hover{
+    background-color: #ca4a4a;
+    border-radius: 10px;
+    color: white;
 }
