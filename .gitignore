@@ -1,48 +1,4 @@
 /node_modules
 /dist
 /.parcel-cache
-
-#import React, {useState, useEffect, Suspense} from "react";
- #import RestaurantCard from "./RestaurantCard";
- #import { restaurantData } from "../utils/mockData";
- #import Shimmer from "./Shimmer";
- #
- #const Body = () => {
- #    const [listOfRestaurants, setListOfRestaurants] = useState([]);
- #
- #    const fetchData = async () => {
- #        const data = await fetch(restaurantData);
- #        const json = await data.json();
- #        console.log(json);
- #        setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []);
- #    };
- #    useEffect(() => {
- #        fetchData().then();
- #    }, []);
- #
- #
- #    return listOfRestaurants && listOfRestaurants.length === 0 ? <Shimmer/> : (
- #        <div className="body">
- #            <div className="search">
- #                Search
- #            </div>
- #            <div className="filter">
- #                <button className="filterBtn" onClick={() => {
- #                        const filteredList = listOfRestaurants.filter(
- #                            (resData) => resData.info.avgRating > 4.2
- #                        );
- #                    }
- #                }>
- #                    Top Rated Restaurants
- #                </button>
- #            </div>
- #            <div className="Restaurant-Container">
- #                {listOfRestaurants.map((restaurant, index) => (
- #                    <RestaurantCard key={restaurant.info.id} resData={restaurant} />
- #                ))}
- #            </div>
- #        </div>
- #    );
- #};
- #
- #export default Body;
+/.idea
