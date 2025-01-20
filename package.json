@@ -2,7 +2,6 @@
   "name": "react_learning",
   "version": "1.0.0",
   "description": "Learn React",
-  "main": "src/scripts.js",
   "scripts": {
     "start": "parcel index.html",
     "test": "jest",
@@ -22,6 +21,7 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@swc/helpers": "^0.5.15",
     "parcel": "^2.13.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
