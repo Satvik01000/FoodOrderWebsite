@@ -6,7 +6,6 @@ import {createBrowserRouter, RouterProvider, Outlet} from "react-router";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
-import RestaurantMenu from "./components/RestaurantMenu";
 
 const rootElement = ReactDOM.createRoot(document.getElementById("root"));
 
